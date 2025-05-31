@@ -1,21 +1,15 @@
 # include <iostream>
-#include <list>
-#include <random> 
-#include <algorithm>
+# include <ctime>
 
-char random_pick(const std::list<char>& list){
-
-    std::mt19937 gen(std::random_device{}());
-    auto it = list.begin();
-    std::advance(it, std::uniform_int_distribution<>(0, list.size() - 1)(gen));
-    return *it;
-
+char random_pick(char list[] , int size){
+    int random_num = rand() % size;
+    return list[random_num];
 }   
 
 int main(){
-    const std::list<char> numbers_list = {'1' , '2', '3', '4', '5', '6', '7', '8', '9'};
-    const std::list<char> letters_list = {'Q','W','E','R', 'T' , 'Y' , 'U' , 'I' , 'O' , 'P','A','S', 'D' , 'F' , 'G' , 'H' , 'J','K', 'L' , 'Z','X','V','C', 'B'  , 'N','M'};
-    const std::list<char> special_characters_list = {'!','@' ,'#' , '$' , '%' , '&' , '?'};
+    char numbers_list[] = {'1' , '2', '3', '4', '5', '6', '7', '8', '9'};
+    char letters_list[] = {'Q','W','E','R', 'T' , 'Y' , 'U' , 'I' , 'O' , 'P','A','S', 'D' , 'F' , 'G' , 'H' , 'J','K', 'L' , 'Z','X','V','C', 'B'  , 'N','M'};
+    char special_characters_list[] = {'!','@' ,'#' , '$' , '%' , '&' , '?'};
 
     int numbers_amount;
     int letters_amount;
@@ -36,24 +30,27 @@ int main(){
 
     if (numbers_amount > 0){
         for (int i = 0; i < numbers_amount; i++){
-            password.push_back(random_pick(numbers_list));
+            password.push_back(random_pick(numbers_list , sizeof(numbers_list)));
         }
     }
 
     if (letters_amount > 0){
-        for (int z = 0; z < letters_amount; z++){
-            password.push_back(random_pick(letters_list));
+        for (int i = 0; i < letters_amount; i++){
+            password.push_back(random_pick(letters_list , sizeof(letters_list)));
         }
     }
 
     if (special_characters_amount > 0){
-        for (int e = 0; e < special_characters_amount; e++){
-            password.push_back(random_pick(special_characters_list));
+        for (int i = 0; i < special_characters_amount; i++){
+            password.push_back(random_pick(special_characters_list , sizeof(special_characters_list)));
         }
     }
 
+    for (int j = 0; j < password.size(); j++){
+        int random_num = rand() % password.size();
+        std::swap(password[j], password[random_num]);
+    }
 
-    std::shuffle(password.begin(), password.end(), std::mt19937{std::random_device{}()});
     std::cout << password << "\n"; 
 
     return 0;

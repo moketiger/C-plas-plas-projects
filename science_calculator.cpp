@@ -8,10 +8,10 @@ int main(){
     double number_2;
     double result = 1;
     double new_number;
+    double numbers[] = {};
     double PI = 3.14159265358979323846;
 
     std::string operation;
-    std::list<int> numbers;
     std::string another_number;
 
     std::cout << "Welcome to the science calculator\n";
@@ -30,11 +30,15 @@ int main(){
         if (operation == "sqrt"){
             if (number_1 >=0){
                 result = sqrt(number_1);}}
+                
         else if (operation == "sin"){
             result = sin(number_1 * PI / 180);}
+
         else if (operation == "cos"){
-        result = cos(number_1 * PI / 180);
+            result = cos(number_1 * PI / 180);
+
         if (fabs(result) < 1e-10) result = 0; }
+
         else if (operation == "tan"){
             result = tan(number_1 * PI / 180);}
         
@@ -50,8 +54,8 @@ int main(){
         std::cout << "input the secend number: ";
         std::cin >> number_2;
 
-        numbers.push_back(number_1);
-        numbers.push_back(number_2);
+        numbers[0] = number_1;
+        numbers[1] = number_2;
         
         std::cin.ignore();
 
@@ -64,7 +68,7 @@ int main(){
                 std::cout << "write the new number here: ";
                 std::cin >>  new_number;
 
-                numbers.push_back(new_number);
+                numbers[sizeof(numbers)/sizeof(numbers[0] + 1)] = new_number;
                 std::cin.ignore();
             }
 
@@ -73,20 +77,20 @@ int main(){
         
         if (operation == "+"){
             result = 0;
-            for (int i : numbers){
+            for (double i : numbers){
                 result += i;}}
         else if (operation == "-"){
             result = 0;
-            for (int i : numbers){
+            for (double i : numbers){
                 result -= i;}}
         else if (operation == "*"){
             result = 1;
-            for (int i : numbers){
+            for (double i : numbers){
                 result = result * i;}}
         else if (operation == "/"){
-            for (int i : numbers){
+            for (double i : numbers){
                 if (i != 0) {
-                    if (i == numbers.front()){
+                    if (i == numbers[0]){
                         result = i;}
                     else{result /= i;}}
                 else {

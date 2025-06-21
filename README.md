@@ -69,7 +69,7 @@ A command-line calculator that supports both **basic arithmetic** and **scientif
 
 I'm a practical-minded C++ developer who enjoys building tools that solve real problems. Whether it's generating a password or performing scientific calculations, I care about functionality, structure, and user experience.
 
-📧 **Contact me:** [your@email.com](mailto:your@email.com)  
+📧 **Contact me:** [your@email.com](gilad.mizrahi111@gmail.com)  
 🌐 [GitHub Profile](https://github.com/moketiger)
 
 ---

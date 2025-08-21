@@ -1,4 +1,4 @@
-C++ Projects 🚀
+*C++ Projects* 🚀
 
 This repository showcases my C++ projects focused on security, mathematics, and data management.
 These tools demonstrate my ability to work with logic, user input, randomization, JSON persistence, and mathematical computations in an efficient and structured way.

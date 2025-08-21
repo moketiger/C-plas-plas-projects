@@ -26,6 +26,7 @@ Final password is shuffled for maximum security
 🧰 *Key Concepts*:
 rand(), arrays, strings, std::swap, randomness logic
 
+
 🧮 2. **Scientific Calculator**
 
 File: science_calculator.cpp
@@ -55,6 +56,7 @@ Stores calculation history in JSON files (questions.json, results.json)
 🧰 *Key Concepts*:
 <cmath>, control flow, JSON with nlohmann/json, trigonometric conversions
 
+
 ✏️ 3. **Equation Solver**
 
 File: equation_solver.cpp
@@ -71,6 +73,7 @@ Produces simplified solutions for the unknown variable
 
 🧰 *Key Concepts*:
 Object-Oriented Programming (classes, encapsulation), vectors, parsing strings into tokens, algorithm design
+
 
 🎓 4. **Student Management System**
 
@@ -90,6 +93,7 @@ Saves all data to Students.json
 
 🧰 *Key Concepts*:
 OOP (classes, encapsulation), JSON persistence, file I/O, vectors, loops
+
 
 🛠️ **Technologies Used**
 
@@ -112,6 +116,7 @@ External Library:
 nlohmann/json
  – for JSON data storage
 
+
 📚 **What I Learned**
 
 Managing interactive user input
@@ -125,6 +130,7 @@ Applying mathematical and trigonometric logic
 Implementing persistence with JSON files
 
 Designing structured programs using OOP principles
+
 
 💼 **About Me**
 

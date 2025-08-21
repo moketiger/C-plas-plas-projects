@@ -1,9 +1,9 @@
-*C++ Projects* 🚀
+**C++ Projects** 🚀
 
 This repository showcases my C++ projects focused on security, mathematics, and data management.
 These tools demonstrate my ability to work with logic, user input, randomization, JSON persistence, and mathematical computations in an efficient and structured way.
 
-🔐 1. Secure Password Generator
+🔐 1. **Secure Password Generator**
 
 File: Random_password_generator.cpp
 Description:
@@ -15,7 +15,7 @@ Letters (uppercase A–Z)
 
 Special characters (e.g. !, @, #, …)
 
-✅ Features:
+✅ *Features*:
 
 Random character selection from different sets
 
@@ -23,10 +23,10 @@ User decides how many of each type
 
 Final password is shuffled for maximum security
 
-🧰 Key Concepts:
+🧰 *Key Concepts*:
 rand(), arrays, strings, std::swap, randomness logic
 
-🧮 2. Scientific Calculator
+🧮 2. **Scientific Calculator**
 
 File: science_calculator.cpp
 Description:
@@ -40,7 +40,7 @@ Advanced: ^ (power), sqrt
 
 Trigonometry: sin, cos, tan (in degrees)
 
-✅ Features:
+✅ *Features*:
 
 Prompts the user for numbers and operation
 
@@ -52,16 +52,16 @@ Detects and blocks division by zero
 
 Stores calculation history in JSON files (questions.json, results.json)
 
-🧰 Key Concepts:
+🧰 *Key Concepts*:
 <cmath>, control flow, JSON with nlohmann/json, trigonometric conversions
 
-✏️ 3. Equation Solver
+✏️ 3. **Equation Solver**
 
 File: equation_solver.cpp
 Description:
 A console-based tool to solve algebraic equations (linear) with support for brackets and variables.
 
-✅ Features:
+✅ *Features*:
 
 Parses user input (e.g. 4x - 2 = 10)
 
@@ -69,16 +69,16 @@ Handles brackets, operations, and variables
 
 Produces simplified solutions for the unknown variable
 
-🧰 Key Concepts:
+🧰 *Key Concepts*:
 Object-Oriented Programming (classes, encapsulation), vectors, parsing strings into tokens, algorithm design
 
-🎓 4. Student Management System
+🎓 4. **Student Management System**
 
 File: student_management.cpp
 Description:
 A simple management system for handling student information with persistent storage.
 
-✅ Features:
+✅ *Features*:
 
 Add new students (first name, last name, age)
 
@@ -88,10 +88,10 @@ View all stored students with their scores and ages
 
 Saves all data to Students.json
 
-🧰 Key Concepts:
+🧰 *Key Concepts*:
 OOP (classes, encapsulation), JSON persistence, file I/O, vectors, loops
 
-🛠️ Technologies Used
+🛠️ **Technologies Used**
 
 Language: C++17
 
@@ -112,7 +112,7 @@ External Library:
 nlohmann/json
  – for JSON data storage
 
-📚 What I Learned
+📚 **What I Learned**
 
 Managing interactive user input
 
@@ -126,12 +126,12 @@ Implementing persistence with JSON files
 
 Designing structured programs using OOP principles
 
-💼 About Me
+💼 **About Me**
 
 I'm a practical-minded C++ developer who enjoys building tools that solve real problems.
 Whether it's generating secure passwords, solving equations, or managing student records, I focus on functionality, structure, and user experience.
 
-📧 Contact me: [gilad.mizrahi111@gmail.com
+📧 *Contact me*: [gilad.mizrahi111@gmail.com
 ]
 🌐 GitHub Profile
 

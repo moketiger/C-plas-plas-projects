@@ -148,17 +148,6 @@ int main(){
 
     std::cout << secont_Part_Equation[0].get_Value() << " = " << result_for_var;
 
-    // for (int i = 0; i < First_Part_Equation.size(); i++){
-    //     std::cout << First_Part_Equation[i].get_Factor() << '\t' <<  First_Part_Equation[i].get_Operation() << '\t' <<   First_Part_Equation[i].get_Value() << '\n';
-    // }
-    // 
-    // std::cout << "---------------------------------\n";
-    // std::cout << "---------------------------------\n";
-    // 
-    // for (int i = 0; i < secont_Part_Equation.size(); i++){
-    //     std::cout << secont_Part_Equation[i].get_Factor() << '\t' <<  secont_Part_Equation[i].get_Operation() << '\t' <<   secont_Part_Equation[i].get_Value() << '\n';
-    // }
-
     return 0;
 }
 
@@ -349,4 +338,5 @@ Equation_Items Create_Item(double Factor , char Operation , std::string Value){
     Equation_Items New_item;
     New_item.set_everything(Factor , Operation , Value);
     return New_item;
+
 }
